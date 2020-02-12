@@ -69,11 +69,11 @@ new Timer(1000, taskPerformer).start();
         time1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         paneldasar2 = new javax.swing.JPanel();
-        gedung = new javax.swing.JButton();
+        penginapan = new javax.swing.JButton();
         jadwal = new javax.swing.JButton();
         logout = new javax.swing.JButton();
         saung = new javax.swing.JButton();
-        gedung1 = new javax.swing.JButton();
+        gedung = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
         laporan = new javax.swing.JMenu();
         Laporan = new javax.swing.JMenuItem();
@@ -212,19 +212,19 @@ new Timer(1000, taskPerformer).start();
         paneldasar2.setBackground(new java.awt.Color(0, 0, 0));
         paneldasar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        gedung.setBackground(new java.awt.Color(255, 255, 255));
-        gedung.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        gedung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ihome.png"))); // NOI18N
-        gedung.setText("Penginapan");
-        gedung.setActionCommand("");
-        gedung.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        gedung.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        gedung.addActionListener(new java.awt.event.ActionListener() {
+        penginapan.setBackground(new java.awt.Color(255, 255, 255));
+        penginapan.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        penginapan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ihome.png"))); // NOI18N
+        penginapan.setText("Penginapan");
+        penginapan.setActionCommand("");
+        penginapan.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        penginapan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        penginapan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gedungActionPerformed(evt);
+                penginapanActionPerformed(evt);
             }
         });
-        paneldasar2.add(gedung, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 100, 30));
+        paneldasar2.add(penginapan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 100, 30));
 
         jadwal.setBackground(new java.awt.Color(255, 255, 255));
         jadwal.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
@@ -268,19 +268,19 @@ new Timer(1000, taskPerformer).start();
         });
         paneldasar2.add(saung, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 100, 30));
 
-        gedung1.setBackground(new java.awt.Color(255, 255, 255));
-        gedung1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        gedung1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/igedung.png"))); // NOI18N
-        gedung1.setText("Gedung");
-        gedung1.setActionCommand("");
-        gedung1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        gedung1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        gedung1.addActionListener(new java.awt.event.ActionListener() {
+        gedung.setBackground(new java.awt.Color(255, 255, 255));
+        gedung.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        gedung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/igedung.png"))); // NOI18N
+        gedung.setText("Gedung");
+        gedung.setActionCommand("");
+        gedung.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        gedung.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        gedung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gedung1ActionPerformed(evt);
+                gedungActionPerformed(evt);
             }
         });
-        paneldasar2.add(gedung1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 100, 30));
+        paneldasar2.add(gedung, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 100, 30));
 
         getContentPane().add(paneldasar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 730));
 
@@ -353,11 +353,9 @@ new Timer(1000, taskPerformer).start();
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void gedungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gedungActionPerformed
-        daftar_gedung n = new daftar_gedung();
-        panel.add(n);
-        n.setVisible(true);
-    }//GEN-LAST:event_gedungActionPerformed
+    private void penginapanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_penginapanActionPerformed
+      
+    }//GEN-LAST:event_penginapanActionPerformed
 
     private void jadwalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jadwalActionPerformed
         jadwal m = new jadwal();
@@ -459,12 +457,16 @@ new Timer(1000, taskPerformer).start();
     }//GEN-LAST:event_SudirmanActionPerformed
 
     private void saungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saungActionPerformed
-        // TODO add your handling code here:
+        daftar_saung m = new daftar_saung();
+        panel.add(m);
+        m.setVisible(true);
     }//GEN-LAST:event_saungActionPerformed
 
-    private void gedung1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gedung1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_gedung1ActionPerformed
+    private void gedungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gedungActionPerformed
+        daftar_gedung n = new daftar_gedung();
+        panel.add(n);
+        n.setVisible(true);
+    }//GEN-LAST:event_gedungActionPerformed
 
     /**
      * @param args the command line arguments
@@ -512,7 +514,6 @@ new Timer(1000, taskPerformer).start();
     private javax.swing.JMenuItem Sudirman;
     private javax.swing.JMenuItem dewantoro;
     private javax.swing.JButton gedung;
-    private javax.swing.JButton gedung1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -525,6 +526,7 @@ new Timer(1000, taskPerformer).start();
     private javax.swing.JPanel panel2;
     private javax.swing.JPanel paneldasar;
     private javax.swing.JPanel paneldasar2;
+    private javax.swing.JButton penginapan;
     private javax.swing.JButton saung;
     private javax.swing.JLabel tanggal;
     private javax.swing.JLabel tanggal1;

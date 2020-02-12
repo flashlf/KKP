@@ -109,6 +109,11 @@ private void masuk(){
         });
 
         tpass.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        tpass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tpassActionPerformed(evt);
+            }
+        });
         tpass.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 tpassKeyPressed(evt);
@@ -195,6 +200,10 @@ private void masuk(){
             masuk();
         }
     }//GEN-LAST:event_tpassKeyPressed
+
+    private void tpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tpassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tpassActionPerformed
 
     
     /**

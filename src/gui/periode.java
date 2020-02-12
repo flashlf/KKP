@@ -137,7 +137,9 @@ public class periode extends javax.swing.JFrame {
             File f = new File("D:/KKP/wildat/src/laporan/Laporan.jrxml");
             JasperReport j = JasperCompileManager.compileReport(f.getAbsolutePath());
             JasperPrint jasperPrint = JasperFillManager.fillReport(j, param, conn);
-            JasperViewer.viewReport(jasperPrint, false);
+            JasperViewer jv = new JasperViewer(jasperPrint, false);
+            jv.setTitle("Laporan Keuangan Penyewaan Gedung Pertemuan");
+            jv.setVisible(true);
             dispose();
         }
         catch(Exception e) {

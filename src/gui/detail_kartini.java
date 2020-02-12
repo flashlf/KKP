@@ -9,7 +9,7 @@ import koneksi.konek;
 
 public class detail_kartini extends javax.swing.JFrame {
 private Connection conn = new konek().connect();
-  public String a[] = new String[10],b[] = new String[10],c[] = new String[10]; int x; 
+  public String a[] = new String[50],b[] = new String[50],c[] = new String[50]; int x; 
   protected void tampil(){
     String sql = "select * from ruang";  
         try {
